@@ -166,6 +166,10 @@ body{
         width: 100%;
         display: none;
     }
+    .toggle-button{
+        display:flex;
+    }
+
     .header{
         flex-direction: column;
         align-items: flex-start;
