@@ -72,7 +72,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     color: white;
     gap: 40px;
@@ -80,14 +80,15 @@ body{
 .space-car{
     background-color: rgb(12, 48, 48);
     width: 60%;
+    height: 60vh;
 }
 .car{
     width: 55%;
     
 }
 .inform{
-    width: 30%;
-    font-size: 25px;
+    width: 45%;
+    font-size: 23px;
 }
 
 /* =======footer====== */
@@ -144,10 +145,13 @@ body{
     .logo{
         width: 70px;
     }
+    .space-car{
+        width: 100%;
+    }
     .container{
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 95%; 
     }
     .inform{
         width: 100%;
