@@ -160,9 +160,6 @@ body{
 }
 @media ( max-width: 724px){
     /* =======header======= */
-    .toggle-button{
-        display: flex;
-    }
     .header-links{
         width: 100%;
         display: none;
@@ -192,9 +189,4 @@ body{
         flex-direction: column;
         font-size: 12px;
     }
-    .space-car,
-    .inform{
-         width: 95%;
-    }
-    
 }
