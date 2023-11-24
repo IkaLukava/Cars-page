@@ -80,7 +80,6 @@ body{
 .space-car{
     background-color: rgb(12, 48, 48);
     width: 60%;
-    height: 60vh;
 }
 .car{
     width: 55%;
@@ -196,7 +195,6 @@ body{
     .space-car,
     .inform{
          width: 95%;
-         height: 50vh;
     }
     
 }
