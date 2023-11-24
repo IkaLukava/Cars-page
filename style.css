@@ -75,7 +75,7 @@ body{
     /* align-items: center; */
     text-align: center;
     color: white;
-    gap: 40px;
+    gap: 20px;
 }
 .space-car{
     background-color: rgb(12, 48, 48);
@@ -160,6 +160,7 @@ body{
     }
 }
 @media ( max-width: 724px){
+    /* =======header======= */
     .toggle-button{
         display: flex;
     }
@@ -184,7 +185,18 @@ body{
     .header-links.active{
         display: flex;
     }
+    /* ========content========= */
     .space-car{
         width: 100%;
     }
+    .container{
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .space-car,
+    .inform{
+         width: 95%;
+         height: 50vh;
+    }
+    
 }
