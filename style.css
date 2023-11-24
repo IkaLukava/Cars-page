@@ -79,10 +79,11 @@ body{
 }
 .space-car{
     background-color: rgb(12, 48, 48);
-    width: 45%;
+    width: 60%;
 }
 .car{
-    width: 100%;
+    width: 55%;
+    
 }
 .inform{
     width: 30%;
@@ -146,16 +147,10 @@ body{
     .container{
         display: flex;
         flex-direction: column;
-        width: 100%;
-    }
-    .space-car{
-        :100px;
-    }
-    .car{
-        width: 100%;
+        width: 95%;
     }
     .inform{
-        width: 40%;
+        width: 100%;
         font-size: 15px;
         padding: 8px;
     }
@@ -180,9 +175,12 @@ body{
         text-align: center;
     }
     .header-links li a{
-        padding:  .5rem 1rem;
+        padding:  0rem 0rem;
     }
     .header-links.active{
         display: flex;
+    }
+    .space-car{
+        width: 100%;
     }
 }
