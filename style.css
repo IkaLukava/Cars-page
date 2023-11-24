@@ -169,7 +169,6 @@ body{
     .toggle-button{
         display:flex;
     }
-
     .header{
         flex-direction: column;
         align-items: flex-start;
