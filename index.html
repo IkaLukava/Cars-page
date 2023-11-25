@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cars Website</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -17,11 +18,27 @@
                 <img src="images/carlogo.jpg" class="logo">
             </a>
         </div>
-        <a href="#" class="toggle-button">
+        <!-- <a href="#" class="toggle-button" onclick="changeIcon(this)">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </a> -->
+        <div class="toggle"><i class="fa fa-bars"></i></div>
+        <script>
+            let btn = document.querySelector(".toggle");
+            let icon = btn.querySelector(".fa-bars");
+
+            btn.onclick = function(){
+                if(icon.classList.contains("fa-bars")){
+                    icon.classList.replace("fa-bars", "fa-times");
+                }
+                else{
+                    icon.classList.replace("fa-times", "fa-bars");
+                }
+            }
+        </script>
+
+
         <div class="header-links">
             <ul>
                 <li><a href="#" class="header-link"><h2>Home</h2></a></li>
@@ -92,7 +109,7 @@
             <button type="submit" class="btn" onclick="openPopup()">Login</button>
             <div class="popup" id="popup">
                 <img src="images/tick.jpg">
-                <h2>Congratulations!</h2>
+                <h3>Congratulations!</h3>
                 <p>You have successfully registered!</p>
                 <button type="button" onclick="closePopup()">OK</button>
             </div>

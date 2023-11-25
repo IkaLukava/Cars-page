@@ -51,21 +51,22 @@ body{
     border: 1px solid #64748b;
     transition: 1s;
 }
-.toggle-button{
+.toggle{
+    background: black;
+    padding: 10px 15px;
+    cursor: pointer;
     position: absolute;
     top: .75rem;
     right:  1rem;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    visibility: hidden;
+     border-radius: 10px;
 }
-.toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+.toggle i{
+    font-size: 20px;
+    transition: 0.2s;
+   
 }
 
 /* ==========content============== */
@@ -82,14 +83,21 @@ body{
     background-color: rgb(12, 48, 48);
     width: 60%;
 }
+.space-car p{
+    padding: 20px;
+}
 .car{
     width: 55%;
     
 }
 .inform{
     width: 45%;
-    font-size: 23px;
+    height: 40%;
+    font-size: 20px;
     color: black;
+    text-align: center;   
+    transform: translateY(50%); 
+    
 }
 
 /* =======footer====== */
@@ -189,7 +197,7 @@ body{
     font-size: 14.5px;
     margin: -15px 0 8px;
 }
-.remember-forgot label input{
+.remember-forgot input{
     accent-color:blue;
     margin-right: 5px;
 }
@@ -256,6 +264,10 @@ body{
     top:50%;
     transform: translate(-50%,-50%) scale(1);
 }
+.remember-forgot label{
+    transform: translateX(50%);
+    font-size: 20px;
+}
 
 
 /* .input-box i {
@@ -265,6 +277,15 @@ body{
 
 
 /* ========media========= */
+
+@media(max-width:1280px){
+    .inform{
+        transform: translateY(15%);
+    }
+}
+
+
+
 
 @media ( max-width:1024px){
     .logo{
@@ -282,12 +303,19 @@ body{
         font-size: 15px;
         padding: 8px;
     }
+    .popup{
+        width: 310px;
+    }
 }
+
 @media ( max-width: 724px){
     /* =======header======= */
     .header-links{
         width: 100%;
         display: none;
+    }
+    .logo{
+        width: 50px;
     }
     .toggle-button{
         display:flex;
@@ -302,6 +330,7 @@ body{
     }
     .header-links li{
         text-align: center;
+        font-size: 10px;
     }
     .header-links li a{
         padding:  0rem 0rem;
@@ -321,12 +350,43 @@ body{
         width: 300px;
     }
     .input-box input{
-        width: 60%;
+        width: 85%;
+    }
+    .wrapper h1{
+        font-size: 25px;
+    }
+    .inform{
+        transform: translateY(-2%);
+    }
+    .popup{
+        width: 250px;
+    }
+    .toggle{
+        visibility: visible;
+        transform: translateY(-5px);
     }
 }
-/* @media (max-width: 424px){
+
+@media (max-width: 424px){
+    .icons-wrap{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+    }
     .wrapper{
+        width: 250px;
+    }
+    .remember-forgot{
+        transform: translateX(-30px);
+    }
+    .popup{
         width: 200px;
     }
-} */
+    .popun h2{
+        font-size: 10px;
+    }
+}
 

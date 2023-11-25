@@ -1,4 +1,4 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const toggleButton = document.getElementsByClassName('toggle')[0]
 const navbarLinks = document.getElementsByClassName('header-links')[0]
 toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
@@ -12,3 +12,4 @@ function openPopup(){
 function closePopup(){
     popup.classList.remove("open-popup");
 }
+
