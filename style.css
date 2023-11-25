@@ -274,6 +274,9 @@ body{
     .wrapper{
         width: 300px;
     }
+    .input-box{
+        width: 60%;
+    }
 }
 /* @media (max-width: 424px){
     .wrapper{
