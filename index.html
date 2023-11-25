@@ -89,7 +89,13 @@
             <div class="remember-forgot">
                 <label><input type="checkbox">Remember Me</label>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" onclick="openPopup()">Login</button>
+            <div class="popup" id="popup">
+                <img src="images/tick.jpg">
+                <h2>Congratulations!</h2>
+                <p>You have successfully registered!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
         </form>
      </div>
     <br>
